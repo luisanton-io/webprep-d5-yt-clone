@@ -1,4 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+    box-sizing: border-box;
+}
 
 body {
     display: flex;
@@ -96,5 +100,42 @@ nav .icons-wrapper ion-icon {
 }
 
 nav .icons-wrapper ion-icon:last-of-type {
+    margin-right: 1.5ch;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3em;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.content .card {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    padding: 1em;
+}
+
+.content .card > img {
+    width: 100%;
+}
+
+.content .card .card-body {
+    display: flex;
+    padding: 1em 0px;
+}
+
+.content .card .card-body h6 {
+    margin: 0;
+    font-size: 1.3em;
+    font-weight: 700;
+}
+
+.content .card .card-body img {
+    border-radius: 100px;
+    width: 50px;
+    height: 50px;
     margin-right: 1.5ch;
 }
